@@ -1,0 +1,723 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.fa
+{
+    color: goldenrod;
+}
+.fa-comment
+{
+    color:  rgb(204, 94, 94);
+}
+.container
+{
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    padding: 10px 0;
+    background-color: rgb(204, 94, 94);
+   
+}
+
+.nav-wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.logo img
+{
+    height: 30px;
+    margin-left: 50px;
+}
+ul.navlist
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin-right: 50px;
+}
+ul.navlist img
+{
+    height: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+ul.navlist a
+{
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: none;
+    margin-left: 30px;
+    color: black;
+    letter-spacing: 1px;
+}
+.container.active
+{
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+.active ul.navlist a 
+{
+    color: black;
+}
+ul.navlist a:hover 
+{
+    color: pink;
+    transition: .5s ease-in-out;
+}
+.hamburger
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    cursor: pointer;
+    float: right;
+    margin-right: 40px;
+}
+.hamburger
+{
+    display: none;
+}
+.hamburger span
+{
+    background-color: black;
+    width: 28px;
+    height: 2px;
+    margin-bottom: 8px;
+}
+/* end of the navbar  */
+
+.products
+{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+}
+.pro-content:hover
+{
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.small-content
+{
+    padding-top: 100px;
+    width: 50%;
+}
+.row 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.col1 img 
+{
+    height:400px;
+}
+.col2
+{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.col2 h1 
+{
+    font-size: 30px;
+    font-family: 'Permanent Marker', cursive;
+}
+.col2 h4 
+{
+    font-family: 'Permanent Marker', cursive;
+}
+.col2 h3 
+{
+    font-family: 'Permanent Marker', cursive;
+}
+.col2 select
+{
+    width: 100px;
+}
+.col2 input
+{
+    width: 40px;
+    height: 30px;
+    text-align: center;
+
+}
+.btn 
+{
+    text-decoration: none;
+    color: white;
+    background-color: #f44336;
+    width: 90px;
+    padding: 8px ;
+    text-align: center;
+    border-radius: 5px;
+}
+.btn:hover
+{
+    background-color: transparent;
+    color:  #f44336;
+    transition: all .5s ease-in-out;
+}
+.small-img-row
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.small-img-colom
+{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.small-img-colom:hover
+{
+    transform: scale(1.1);
+}
+.small-img-colom img
+{
+    height: 90px;
+}
+.latest-row
+{
+    width: 60%;
+}
+.latest-product
+{
+
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px;
+}
+.pro-name h1 
+{
+    font-family: 'Permanent Marker', cursive;
+}
+.latest-content
+{
+    margin-left: 30px;
+}
+.latest-content:hover 
+{
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.img-l-pro img
+{
+    height: 250px;
+    align-items: center;
+
+}
+select
+{
+    cursor: pointer;
+}
+input
+{
+    cursor: pointer;
+}
+.heading
+{
+    margin-top: 50px;
+    display: flex;
+    width: 55%;
+    align-items: center;
+    justify-content: space-between;
+}
+.more-pro a
+{
+    color: black;
+    text-decoration: none;
+}
+
+
+section.footer
+{
+    margin-top: 130px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.footer-row
+{
+    width: 80%;
+}
+.footer-colom
+{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+.link-app h2
+{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.link-app p
+{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.app-imgs
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-imgs img
+{
+    height: 40px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.app-imgs img:hover
+{
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+.web-detail
+{
+    width: 300px;
+    text-align: center;
+}
+.web-detail img
+{
+    height: 40px;
+    color: white;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.useful-links
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.useful-links h2
+{
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.useful-links a
+{
+    color: white;
+    text-decoration: none;
+    margin-top: 4px;
+}
+.useful-links a:hover
+{
+    color: gainsboro;
+    transition: all 0.4s ease-in-out;
+}
+.follow-us
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.follow-us h2
+{
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.follow-us a
+{
+    color: white;
+    text-decoration: none;
+    margin-top: 4px;
+}
+.follow-us a:hover
+{
+    color: gainsboro;
+    transition: all 0.4s ease-in-out;
+}
+
+.about-me
+{
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width:1455px)
+{
+    .hamburger
+    {
+        display: flex;
+        z-index: 999;
+    }
+    .col1
+    {
+        width: 350px;
+    }
+    .col2
+    {
+       
+        width: 200px;
+    }
+    .col2 p 
+    {
+        font-size: 15px;
+    }
+    .col2 h1
+    {
+        font-size: 20px;
+    }
+    .btn 
+    {
+        
+        width: 70px;
+        font-size: 10px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .col2 p 
+    {
+        font-size: 15px;
+    }
+
+    #nav-ul
+   {
+    background: linear-gradient(45deg, #434343,pink);
+    position: fixed;
+    width: 100%;
+    height: 70%;
+    left: 0;
+    right: 0px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    margin-top: 60px;
+    opacity: 0;
+    pointer-events: none;
+   
+   }
+     #nav-ul a
+   {
+       font-size: 30px;
+    color: white;
+    margin-top: 40px;
+   }
+     #nav-ul a:hover
+   {
+    color: #f44336;
+    }
+      #nav-ul img 
+   {
+    display: none;
+   }
+
+      #nav-ul.open
+   {
+    color: white;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all  0.5s ease-in-out;
+    transform: translateY(20px); 
+    }
+     .hamburger span
+    {
+       transform-origin: left;
+       transition: all .5s ease-in-out;
+    }
+}
+@media only screen and (max-width:1145px)
+{
+    .col1
+    {
+        width: 250px;
+    }
+    #big-img
+    {
+        height: 300px;
+    }
+    .col2
+    {
+       
+        width: 150px;
+    }
+    .col2 p 
+    {
+        font-size: 12px;
+    }
+    .col2 h1
+    {
+        font-size: 15px;
+    }
+    option
+    {
+        font-size: 10px;
+        width: 10px;
+    }
+    .btn 
+    {
+        
+    
+        width: 70px;
+        font-size: 10px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .col2 p 
+    {
+        font-size: 15px;
+    }
+.footer-colom .link-app h2
+{
+    font-size: 15px;
+    margin-bottom: 5px
+}
+.footer-colom .link-app p
+{
+    font-size: 10px;
+}
+.app-imgs img
+{
+    height: 30px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.web-detail
+{
+    width: 150px;
+}
+.web-detail img
+{
+    height: 30px;
+    color: white;
+    background-color: white;
+    margin-bottom: 5px;
+}
+.web-detail p 
+{
+    font-size: 10px;
+}
+.useful-links h2
+{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.useful-links a 
+{
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.follow-us h2 
+{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.follow-us a
+{
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.about-me p 
+{
+    font-size: 10px;
+}
+}
+@media only screen and (max-width:900px)
+{
+    .row 
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+    .small-content
+    {
+        width: 80%;
+    }
+    .col1
+    {
+        width: 400px;
+    }
+    .col2
+    {
+        width: 400px;
+    }
+     .col2 p
+    {
+        font-size: 18px;
+    }
+    .col2 h1 
+    {
+        font-size: 28px;
+    }
+    .col2 h4 
+    {
+        font-size: 23px;
+    }
+    .col2 select
+    {
+        width: 150px;
+        height: 25px;
+    }
+    .col2 .btn
+    {
+        width: 100px;
+        font-size: 15px;
+    }
+.heading
+{
+    width: 50%;
+}
+.heading h1 
+{
+    font-size: 20px;
+}
+}
+@media only screen and (max-width:700px)
+{  
+.footer-colom
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    
+}
+.col1
+    {
+        width: 400px;
+    }
+.link-app
+{
+    margin-bottom: 40px;
+}
+.link-app h2
+{
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.web-detail
+{
+    width: 200px;
+    margin-bottom: 30px;
+}
+.useful-links 
+{
+    margin-bottom: 20px;
+}
+
+.useful-links h2
+{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.useful-links a
+{
+    font-size: 14px;
+}
+.follow-us h2
+{
+    font-size: 22px;
+}
+.follow-us a
+{
+    font-size: 14px;
+}
+
+}
+@media only screen and (max-width:520px)
+{
+    .col1
+    {
+        width:300px;
+    }
+    .col2
+    {
+        width: 300px;
+    }
+
+    .heading h1 
+{
+    font-size: 15px;
+}
+.heading a 
+{
+    font-size: 13px;
+}
+}
+@media only screen and (max-width:420px)
+{
+    .col1
+    {
+        width: 250px;
+    }
+    .col2
+    {
+        width: 250px;
+        margin-top: 10px;
+    }
+    .col2 h1 
+    {
+        font-size: 19px;
+    }
+    .col2 p 
+    {
+        font-size: 12px;
+    }
+    .col2 h4 
+    {
+        font-size: 18px;
+    }
+    .col2 select 
+    {
+        width: 90px;
+    }
+    .col2 .btn
+    {
+        width: 70px;
+        font-size: 10px;
+    }
+    .heading h1 
+    {
+        font-size: 11px;
+    }
+}
+
+
+

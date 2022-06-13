@@ -1,0 +1,884 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.fa
+{
+    color: goldenrod;
+}
+.fa-comment
+{
+    color:  rgb(204, 94, 94);
+}
+.container
+{
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    padding: 10px 0;
+    background-color: rgb(204, 94, 94); 
+}
+.container.active
+{
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+.nav-wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.logo img
+{
+    height: 30px;
+    margin-left: 50px;
+}
+ul.navlist
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin-right: 50px;
+}
+ul.navlist img
+{
+    height: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+ul.navlist a
+{
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: none;
+    margin-left: 30px;
+    color: black;
+    letter-spacing: 1px;
+}
+.active ul.navlist a 
+{
+    color: black;
+}
+ul.navlist a:hover 
+{
+    color: pink;
+    transition: .5s ease-in-out;
+}
+.hamburger
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    cursor: pointer;
+    float: right;
+    margin-right: 40px;
+}
+.hamburger
+{
+    display: none;
+}
+.hamburger span
+{
+    background-color: black;
+    width: 28px;
+    height: 2px;
+    margin-bottom: 8px;
+}
+/* end of the navbar  */
+
+section.home
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: pink;
+    height: 100vh;
+
+}
+.home-heading
+{
+    width: 500px;
+}
+.home-heading h1
+{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 45px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight:bolder;
+}
+.home-heading p
+{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.btn
+{
+    background-color: orangered;
+    border: 1px solid orangered;
+    outline: none;
+    height: 30px ;
+    width: 130px;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover 
+{
+    color: orangered;
+    background-color: transparent;
+    transition: all .6s ease-in-out;
+
+}
+.home-logo img
+{
+    height: 600px;
+}
+.products
+{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.products .product-name
+{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Permanent Marker', cursive;
+}
+.product-row
+{
+    width: 70%;
+}
+.feature-pro
+{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.pro-content:hover
+{
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.latest-row
+{
+    width: 60%;
+}
+.latest-product
+{
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    justify-content:space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.latest-content
+{
+    margin-left: 30px;
+    margin-top: 30px
+}
+.latest-content:hover 
+{
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.img-l-pro img
+{
+    height: 250px;
+    align-items: center;
+
+}
+.smart-watch
+{
+    display: flex;
+    background-color: pink;
+    width: 100%;
+    height: 60vh;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.watch-logo img
+{
+    height: 430px;
+}
+.watch-content
+{
+    width: 500px;
+}
+.watch-content h1
+{
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-family: 'Permanent Marker', cursive;
+}
+.watch-content .btn
+{
+    margin-top: 20px;
+} 
+
+
+section.testemonial-sec
+{
+    margin-top: 100px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.testemonial-row
+{
+    width: 70%;
+}
+.test-heading
+{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 50px;
+    font-family: 'Permanent Marker', cursive;
+}
+.testemonials
+{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%
+}
+.testemonials .test-content
+{
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 40px 20px;
+}
+h3
+{
+    font-family: 'Permanent Marker', cursive;
+}
+.testemonials .test-content:hover
+{
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+}
+.test-content p
+{
+    font-size: 12px;
+    margin: 12px 0;
+}
+.feed-icon i
+{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.testemonials .test-content .test-img img
+{
+    height: 60px;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+.pay-method
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+}
+.pay-row
+{
+    width: 80%;
+}
+.pay-method .payment
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    flex-wrap: wrap;
+}
+.pay-img img
+{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.pay-img img:hover
+{
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+
+
+section.footer
+{
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.footer-row
+{
+    width: 80%;
+}
+.footer-colom
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 30px;
+    
+}
+.link-app h2
+{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.link-app p
+{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.app-imgs
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-imgs img
+{
+    height: 40px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.app-imgs img:hover
+{
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+.web-detail
+{
+    width: 300px;
+    text-align: center;
+}
+.web-detail img
+{
+    height: 40px;
+    color: white;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.useful-links
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.useful-links h2
+{
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.useful-links a
+{
+    color: white;
+    text-decoration: none;
+    margin-top: 4px;
+}
+.useful-links a:hover
+{
+    color: gainsboro;
+    transition: all 0.4s ease-in-out;
+}
+.follow-us
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.follow-us h2
+{
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.follow-us a
+{
+    color: white;
+    text-decoration: none;
+    margin-top: 4px;
+}
+.follow-us a:hover
+{
+    color: gainsboro;
+    transition: all 0.4s ease-in-out;
+}
+
+.about-me
+{
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width:1365px)
+{
+    .hamburger
+    {
+        display: flex;
+        z-index: 999;
+    }
+    .home-logo img
+    {
+        height: 400px;
+    }
+    .products
+    {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .products .product-name h1
+    {
+        font-size: 25px;
+        text-align: center;
+    }  
+       
+   .feature-pro
+    {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items:center ;
+        justify-content: space-evenly
+
+    }
+
+    #nav-ul
+   {
+    background: linear-gradient(45deg, #434343,pink);
+    position: fixed;
+    width: 100%;
+    height: 70%;
+    left: 0;
+    right: 0px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    margin-top: 60px;
+    opacity: 0;
+    pointer-events: none;
+   
+   }
+     #nav-ul a
+   {
+       font-size: 30px;
+    color: white;
+    margin-top: 40px;
+   }
+     #nav-ul a:hover
+   {
+    color: #f44336;
+    }
+      #nav-ul img 
+   {
+    display: none;
+   }
+
+      #nav-ul.open
+   {
+    color: white;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all  0.5s ease-in-out;
+    transform: translateY(20px); 
+    }
+     .hamburger span
+    {
+       transform-origin: left;
+       transition: all .5s ease-in-out;
+    }
+
+    .test-content
+    {
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width:1145px)
+{
+    section.home
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .pro-content
+    {
+        margin-top: 20px;
+    }
+    .watch-logo img
+{
+    height: 350px;
+}
+.watch-content
+{
+    width: 350px;
+}
+.watch-content h1
+{
+    margin-top: 20px;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.watch-content p
+{
+    font-size: 13px;
+    width: 300px;
+}
+.watch-content .btn
+{
+    width: 100px;
+    font-size: 10px;
+} 
+.pay-img img
+{
+    width: 70%;
+}
+.footer-colom .link-app h2
+{
+    font-size: 15px;
+    margin-bottom: 5px
+}
+.footer-colom .link-app p
+{
+    font-size: 10px;
+}
+.app-imgs img
+{
+    height: 30px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.web-detail
+{
+    width: 150px;
+}
+.web-detail img
+{
+    height: 30px;
+    color: white;
+    background-color: white;
+    margin-bottom: 5px;
+}
+.web-detail p 
+{
+    font-size: 10px;
+}
+.useful-links h2
+{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.useful-links a 
+{
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.follow-us h2 
+{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.follow-us a
+{
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.about-me p 
+{
+    font-size: 10px;
+}
+}
+
+@media only screen and (max-width:700px)
+{
+    .home-logo img
+    {
+        height: 300px;
+        margin-bottom: 70px;
+    }
+    .home-heading
+    {
+        width: 300px;
+        margin-left: 80px;
+    }
+    .home-heading h1
+    {
+        font-size: 30px;
+    }
+    .home-heading p
+    {
+        font-size: 15px;
+    }
+    .home-heading .btn
+    {
+        font-size: 10px;
+        width: 80px;
+        height: 20px;
+    }
+    .watch-content
+{
+    width: 250px;
+}
+    .watch-logo img
+    {
+        height: 250px;
+    }
+    .watch-content h1
+    {
+        margin-top: 15px;
+        font-size: 30px;
+    margin-bottom: 10px;
+    }
+    .watch-content p
+{
+    font-size: 10px;
+    width: 200px;
+}
+.pay-img img
+{
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+     
+.footer-colom
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    
+}
+.link-app
+{
+    margin-bottom: 40px;
+}
+.link-app h2
+{
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.web-detail
+{
+    width: 200px;
+    margin-bottom: 30px;
+}
+.useful-links 
+{
+    margin-bottom: 20px;
+}
+
+.useful-links h2
+{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.useful-links a
+{
+    font-size: 14px;
+}
+.follow-us h2
+{
+    font-size: 22px;
+}
+.follow-us a
+{
+    font-size: 14px;
+}
+
+}
+@media only screen and (max-width:500px)
+{
+    .watch-content
+    {
+        width: 200px;
+    }
+    .watch-logo img
+    {
+        height: 200px;
+    }
+    .watch-content h1
+    {
+        margin-top: 9px;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .watch-content p
+{
+    font-size: 8px;
+    width: 150px;
+}
+.watch-content .btn
+{
+    width: 70px;
+    font-size: 6px;
+    height: 20px;
+    margin-top: 10px;
+} 
+.pay-img img
+{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+}
+@media only screen and (max-width:420px)
+{
+    .home-logo img
+    {
+        height: 250px;
+    }
+    .home-heading
+    {
+        width: 200px;
+        margin-left:30px;
+    }
+    .home-heading h1
+    {
+        font-size: 20px;
+    }
+    .home-heading p
+    {
+        font-size: 10px;
+    }
+    .home-heading .btn
+    {
+        font-size: 8px;
+        width: 70px;
+        height: 20px;
+    }
+    
+
+
+    .watch-content
+    {
+        width: 120px;
+    }
+    .watch-logo img
+    {
+        height: 130px;
+    }
+    .watch-content h1
+    {
+        margin-top: 5px;
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+    .watch-content p
+    {
+       font-size: 6px;
+       width: 100px;
+    }
+    .watch-content .btn
+    {
+        width: 50px;
+        font-size: 5px;
+        height: 20px;
+        margin-top: 7px;
+    } 
+    
+}
+@media only screen and (max-width:290px)
+{
+    .home-logo img
+    {
+        height: 150px;
+    }
+    .home-heading
+    {
+        width: 100px;
+        margin-left:30px;
+    }
+    .home-heading h1
+    {
+        font-size: 15px;
+    }
+    .home-heading .btn
+    {
+        font-size: 5px;
+        width: 60px;
+        height: 20px;
+    }
+
+
+    .watch-content
+    {
+        width: 90px;
+    }
+    .watch-logo img
+    {
+        height: 90px;
+    }
+    .watch-content h1
+    {
+        margin-top: 5px;
+        font-size: 9px;
+        margin-bottom: 3px;
+    }
+    .watch-content p
+    {
+       font-size: 4px;
+       width: 80px;
+    }
+    .watch-content .btn
+    {
+        width: 50px;
+        font-size: 5px;
+        height: 20px;
+        margin-top: 7px;
+    } 
+}
+
